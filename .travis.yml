@@ -5,12 +5,9 @@ before_install:
   - gem --version
   - gem install bundler
 before_script:
-  - cp spec/support/database.travis.yml spec/support/database.yml
+  - cp spec/support/database{.travis,}.yml
   - mysql -e 'create database double_entry_test;'
   - psql -c 'create database double_entry_test;' -U postgres
-script:
-  - bundle exec rspec
-  - ruby script/jack_hammer -t 2000
 matrix:
   include:
     - rvm: 2.3
