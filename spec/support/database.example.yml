@@ -2,7 +2,7 @@ postgres:
   host: localhost
   adapter: postgresql
   encoding: unicode
-  database: double_entry_test
+  database: double_entry_reporting_test
   pool: 100
   username: postgres
   password:
@@ -10,12 +10,12 @@ postgres:
 mysql:
   adapter: mysql2
   encoding: utf8
-  database: double_entry_test
+  database: double_entry_reporting_test
   pool: 100
   username: root
   password:
 sqlite:
   adapter: sqlite3
   encoding: utf8
-  database: tmp/double_entry_test.sqlite3
+  database: tmp/double_entry_reporting_test.sqlite3
   pool: 100
