@@ -1,4 +1,5 @@
 # encoding: utf-8
+require 'double_entry'
 require 'double_entry/reporting/aggregate'
 require 'double_entry/reporting/aggregate_array'
 require 'double_entry/reporting/time_range'
