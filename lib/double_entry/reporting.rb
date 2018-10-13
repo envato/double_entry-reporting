@@ -14,7 +14,6 @@ require 'double_entry/reporting/line_metadata_filter'
 require 'double_entry/reporting/time_range_array'
 
 module DoubleEntry
-  # @api private
   module Reporting
     include Configurable
     extend self
