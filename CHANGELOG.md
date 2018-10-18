@@ -33,6 +33,22 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 - Replaced Machinist with Factory Bot in test suite.
 
+- Changed the `double_entry_line_aggregates.amount` column to be of type `bigint`.
+  Apply this change with the migration:
+
+   ```ruby
+   change_column :double_entry_line_aggregates, :amount, :bigint, null: false
+   ```
+
+- Changed the maximum length of the `account`, `code` and `scope` columns.
+  Apply this change with the migration:
+
+   ```ruby
+   change_column :double_entry_line_aggregates, :account, :string, null: false
+   change_column :double_entry_line_aggregates, :code,    :string, null: true
+   change_column :double_entry_line_aggregates, :scope,   :string, null: true
+   ```
+
 ### Removed
 
 - Removed support for Ruby 1.9, 2.0, 2.1 and 2.2.
