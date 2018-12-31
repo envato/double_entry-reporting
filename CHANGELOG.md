@@ -17,8 +17,6 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 - Added support for Rails 5.0, 5.1 and 5.2
 
-- Allow partner account to be specified for aggregates.
-
 - Allow filtering aggregates by multiple metadata key/value pairs.
 
 ### Changed
@@ -30,6 +28,15 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
   - `DoubleEntry::Reporting::Aggregate::formatted_amount`
   - `DoubleEntry::Reporting::AggregateArray::new`
   - `DoubleEntry::Reporting::LineAggregateFilter::new`
+
+- Allow partner account to be specified for aggregates. This changes the DB
+  schema. Apply this change with the migration:
+
+    ```ruby
+    add_column :double_entry_line_aggregates, :partner_account, :string, after: :code
+    remove_index :double_entry_line_aggregates, name: :line_aggregate_idx
+    add_index :double_entry_line_aggregates, %i[function account code partner_account year month week day], name: :line_aggregate_idx
+    ```
 
 - Replaced Machinist with Factory Bot in test suite.
 
