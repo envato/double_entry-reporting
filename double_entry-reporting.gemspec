@@ -15,9 +15,9 @@ Gem::Specification.new do |gem|
 
   gem.metadata              = {
     'bug_tracker_uri'   => 'https://github.com/envato/double_entry-reporting/issues',
-    'changelog_uri'     => 'https://github.com/envato/double_entry-reporting/blob/master/CHANGELOG.md',
-    'documentation_uri' => 'https://www.rubydoc.info/github/envato/double_entry-reporting/',
-    'source_code_uri'   => 'https://github.com/envato/double_entry-reporting',
+    'changelog_uri'     => "https://github.com/envato/double_entry-reporting/blob/v#{gem.version}/CHANGELOG.md",
+    'documentation_uri' => "https://www.rubydoc.info/gems/double_entry-reporting/#{gem.version}",
+    'source_code_uri'   => "https://github.com/envato/double_entry-reporting/tree/v#{gem.version}",
   }
 
   gem.files                 = `git ls-files -z`.split("\x0").select do |f|
