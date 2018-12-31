@@ -13,7 +13,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
   the [Double Entry changelog](https://github.com/envato/double_entry/blob/master/CHANGELOG.md)
   for changes prior to this release.
 
-- Added support for Ruby 2.3, 2.4 and 2.5.
+- Added support for Ruby 2.3, 2.4, 2.5 and 2.6.
 
 - Added support for Rails 5.0, 5.1 and 5.2
 
