@@ -55,6 +55,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 - Removed support for Rails 3.2, 4.0, and 4.1.
 
+- Removed `DoubleEntry::Reporting.scopes_with_minimum_balance_for_account`
+  method. This is now available on the `DoubleEntry::AccountBalance` class.
+
 ### Fixed
 
 - Fixed Ruby warnings.
