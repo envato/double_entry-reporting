@@ -26,7 +26,7 @@ Gem::Specification.new do |gem|
   gem.require_paths         = ['lib']
   gem.required_ruby_version = '>= 2.2.0'
 
-  gem.add_dependency 'double_entry',  '>= 2.0.0'
+  gem.add_dependency 'double_entry',  '>= 2.0.0.beta2'
   gem.add_dependency 'activerecord',  '>= 3.2.0'
   gem.add_dependency 'activesupport', '>= 3.2.0'
   gem.add_dependency 'money',         '>= 6.0.0'
