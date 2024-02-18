@@ -2,7 +2,7 @@
 
 [![License MIT](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://github.com/envato/double_entry-reporting/blob/master/LICENSE.md)
 [![Gem Version](https://badge.fury.io/rb/double_entry-reporting.svg)](http://badge.fury.io/rb/double_entry-reporting)
-[![Build Status](https://travis-ci.org/envato/double_entry-reporting.svg?branch=master)](https://travis-ci.org/envato/double_entry-reporting)
+[![Build Status](https://github.com/envato/double_entry-reporting/actions/workflows/ci.yml/badge.svg)](https://github.com/envato/double_entry-reporting/actions/workflows/ci.yml)
 
 ## Installation
 
